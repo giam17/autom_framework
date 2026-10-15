@@ -1,0 +1,8 @@
+services:
+  react-web:
+    build: .
+    image: oracle-react:1.0
+    container_name: oracle-react-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
